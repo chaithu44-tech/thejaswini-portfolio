@@ -1,0 +1,1450 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CK THEJASWINI — B.Tech Student &amp; Aspiring Software Developer | Portfolio</title>
+  <meta name="description" content="Portfolio of CK Thejaswini — B.Tech Computer Science student at Jain University, specializing in Python, FastAPI, Java, and Software Engineering. Participant in Smart India Hackathon (SIH).">
+  <meta name="keywords" content="CK Thejaswini, Jain University, Software Developer, Python, FastAPI, Java, Smart India Hackathon, Student Gap Analyser, Portfolio">
+  <meta name="author" content="CK Thejaswini">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="CK THEJASWINI — B.Tech Student &amp; Aspiring Software Developer">
+  <meta property="og:description" content="Explore projects, skills, hackathon achievements, and interactive Student Gap Analyser simulator.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts: Bebas Neue, Syne, Space Grotesk, Outfit, Inter, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Ambient Glow & Grid -->
+  <div class="ambient-noise" aria-hidden="true"></div>
+  <div class="ambient-spotlight ambient-spotlight-1" aria-hidden="true"></div>
+  <div class="ambient-spotlight ambient-spotlight-2" aria-hidden="true"></div>
+
+  <!-- Accessibility Skip Link -->
+  <a href="#hero" class="skip-link">Skip to main content</a>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container" class="toast-container" aria-live="polite"></div>
+
+  <!-- Left Side Vertical Rail -->
+  <aside class="side-rail side-rail-left" aria-hidden="true">
+    <div class="rail-inner">
+      <span class="rail-tag">PYTHON • FASTAPI • JAVA</span>
+      <span class="rail-line"></span>
+      <span class="rail-tag">SMART INDIA HACKATHON PARTICIPANT</span>
+      <span class="rail-line"></span>
+      <span class="rail-tag">JAIN UNIVERSITY '26</span>
+    </div>
+  </aside>
+
+  <!-- Right Side Vertical Rail -->
+  <aside class="side-rail side-rail-right" aria-hidden="true">
+    <div class="rail-inner">
+      <span class="rail-time" id="rail-clock">IST 19:40</span>
+      <span class="rail-line"></span>
+      <span class="rail-tag">BENGALURU, INDIA</span>
+    </div>
+  </aside>
+
+  <!-- Sticky Top Navigation -->
+  <header class="editorial-header">
+    <div class="nav-wrapper">
+      <!-- Monogram Brand -->
+      <a href="#hero" class="nav-brand" aria-label="CK Thejaswini Home">
+        <span class="monogram-box">CK</span>
+        <div class="brand-text-block">
+          <span class="brand-name">CK THEJASWINI</span>
+          <span class="brand-sub">B.TECH • 2ND YEAR</span>
+        </div>
+      </a>
+
+      <!-- Status Indicator Pill -->
+      <div class="status-pill" title="Currently seeking Summer / Fall Internship Opportunities">
+        <span class="status-dot"></span>
+        <span class="status-label">OPEN FOR SDE INTERNSHIPS</span>
+      </div>
+
+      <!-- Navigation Links -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link"><span class="nav-idx">01</span><span>ABOUT</span></a></li>
+          <li><a href="#education" class="nav-link"><span class="nav-idx">02</span><span>EDUCATION</span></a></li>
+          <li><a href="#project-spotlight" class="nav-link"><span class="nav-idx">03</span><span>PROJECTS</span></a></li>
+          <li><a href="#skills" class="nav-link"><span class="nav-idx">04</span><span>SKILLS</span></a></li>
+          <li><a href="#achievements" class="nav-link"><span class="nav-idx">05</span><span>ACHIEVEMENTS</span></a></li>
+          <li><a href="#contact" class="nav-link"><span class="nav-idx">06</span><span>CONTACT</span></a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Controls -->
+      <div class="nav-actions">
+        <!-- Resume Modal Button -->
+        <button id="nav-resume-btn" class="btn-editorial-primary" title="Open Interactive Resume">
+          <i class="fa-regular fa-file-lines"></i>
+          <span>RESUME</span>
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </button>
+
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle-btn" class="icon-btn" title="Toggle Light / Dark Mode" aria-label="Toggle visual theme">
+          <i class="fa-solid fa-moon" id="theme-icon"></i>
+        </button>
+
+        <!-- Sound FX Toggle Button -->
+        <button id="sound-toggle-btn" class="icon-btn" title="Toggle Tactile Audio Feedback" aria-label="Toggle haptic sound effects">
+          <i class="fa-solid fa-volume-high" id="sound-icon"></i>
+        </button>
+
+        <!-- Mobile Menu Toggle -->
+        <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="bar bar-1"></span>
+          <span class="bar bar-2"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Canvas -->
+  <main class="editorial-canvas" id="main-content">
+
+    <!-- ========================================================
+         HERO SECTION: High-Fashion Editorial Stage
+         ======================================================== -->
+    <section class="editorial-section hero-section" id="hero">
+      <!-- Top Meta Banner -->
+      <div class="meta-strip top-strip">
+        <div class="meta-item">
+          <span class="meta-label">EDITION</span>
+          <span class="meta-val">2026 // VOL. 01</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">DISCIPLINE</span>
+          <span class="meta-val">SOFTWARE ENGINEERING &amp; WEB</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">AFFILIATION</span>
+          <span class="meta-val">JAIN UNIVERSITY, BENGALURU</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">SYSTEM STATUS</span>
+          <span class="meta-val highlight-val">ACTIVE &bull; READY TO BUILD</span>
+        </div>
+      </div>
+
+      <!-- Giant Editorial Title Typography -->
+      <div class="hero-stage">
+        <div class="hero-giant-wordmark-wrap" aria-hidden="true">
+          <span class="giant-wordmark">PORTFOLIO</span>
+        </div>
+
+        <!-- Central Stage Grid -->
+        <div class="hero-grid">
+          <!-- Left Intro Column -->
+          <div class="hero-col hero-col-left">
+            <div class="eyebrow-pill">
+              <span class="pulse-indicator"></span>
+              <span>HELLO WORLD &bull; WELCOME</span>
+            </div>
+
+            <h1 class="hero-name">
+              <span class="name-sub">I AM</span>
+              <span class="name-first">CK THEJASWINI</span>
+            </h1>
+
+            <p class="hero-tagline">
+              B.Tech Student &bull; Aspiring Software Developer
+            </p>
+
+            <p class="hero-summary-lead">
+              Passionate engineering scholar at <strong>Jain University</strong> driven by problem-solving, clean software architecture, and practical engineering. Building full-stack solutions with <strong>Python, FastAPI, Java</strong>, and modern web standards.
+            </p>
+
+            <!-- Key Feature Badges -->
+            <div class="hero-badges-row">
+              <div class="hero-badge-pill">
+                <i class="fa-solid fa-code"></i>
+                <span>FastAPI &bull; Python Backend</span>
+              </div>
+              <div class="hero-badge-pill">
+                <i class="fa-solid fa-award"></i>
+                <span>Smart India Hackathon</span>
+              </div>
+              <div class="hero-badge-pill">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <span>B.Tech 2nd Year</span>
+              </div>
+            </div>
+
+            <!-- CTA Action Row -->
+            <div class="hero-cta-group">
+              <a href="#project-spotlight" class="btn-cta-gold">
+                <span>EXPLORE WORK</span>
+                <i class="fa-solid fa-arrow-down-long"></i>
+              </a>
+              <button class="btn-cta-outline" data-open-resume>
+                <i class="fa-regular fa-file-pdf"></i>
+                <span>VIEW RESUME</span>
+              </button>
+              <button class="btn-cta-ghost copy-email-btn" data-copy="thejuck28@gmail.com" title="Copy email address">
+                <i class="fa-regular fa-copy"></i>
+                <span>COPY EMAIL</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Right Visual Stage Column -->
+          <div class="hero-col hero-col-right">
+            <div class="portrait-stage-container">
+              <!-- Geometric Backdrops -->
+              <div class="stage-backdrop-disc"></div>
+              <div class="stage-backdrop-ring"></div>
+              <div class="stage-backdrop-arc"></div>
+
+              <!-- Main Framed Photo -->
+              <div class="portrait-frame">
+                <img 
+                  src="assets/portrait.jpg" 
+                  alt="CK Thejaswini — Aspiring Software Developer" 
+                  class="portrait-img"
+                  id="hero-portrait"
+                  loading="eager"
+                >
+                <div class="portrait-overlay-gradient"></div>
+              </div>
+
+              <!-- Rotating Stamp Badge -->
+              <div class="rotating-stamp" aria-label="Stamp: CK Thejaswini • Jain University • Aspiring SDE">
+                <svg viewBox="0 0 140 140" class="stamp-svg">
+                  <path id="stamp-path" d="M 70, 70 m -50, 0 a 50,50 0 1,1 100,0 a 50,50 0 1,1 -100,0" fill="transparent" />
+                  <text class="stamp-text">
+                    <textPath href="#stamp-path" startOffset="0%" textLength="310" lengthAdjust="spacing">
+                      &bull; CK THEJASWINI &bull; JAIN UNIVERSITY &bull; ASPIRING SDE &bull;
+                    </textPath>
+                  </text>
+                </svg>
+                <div class="stamp-center-icon">
+                  <i class="fa-solid fa-terminal"></i>
+                </div>
+              </div>
+
+              <!-- Floating Milestone Cards -->
+              <div class="floating-pill pill-top-right">
+                <div class="pill-icon"><i class="fa-solid fa-bolt"></i></div>
+                <div class="pill-body">
+                  <span class="pill-title">Smart India Hackathon</span>
+                  <span class="pill-caption">Ideation &amp; Prototyping</span>
+                </div>
+              </div>
+
+              <div class="floating-pill pill-bottom-left">
+                <div class="pill-icon"><i class="fa-solid fa-chart-line"></i></div>
+                <div class="pill-body">
+                  <span class="pill-title">Student Gap Analyser</span>
+                  <span class="pill-caption">Featured Core Project</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Meta Strip -->
+      <div class="meta-strip bottom-strip">
+        <div class="meta-item">
+          <span class="meta-label">CONTACT EMAIL</span>
+          <a href="mailto:thejuck28@gmail.com" class="meta-val meta-link">thejuck28@gmail.com</a>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">DIRECT PHONE</span>
+          <a href="tel:+919524329827" class="meta-val meta-link">+91 9524329827</a>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">CURRENT LOCATION</span>
+          <span class="meta-val">Jain University, Bengaluru</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">LOCAL CLOCK</span>
+          <span class="meta-val" id="hero-clock">19:40:00 IST</span>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ========================================================
+         SECTION 1: ABOUT & CAREER OBJECTIVE
+         ======================================================== -->
+    <section class="editorial-section about-section" id="about">
+      <div class="section-header-row">
+        <div class="sec-number-badge">
+          <span class="sec-num">01</span>
+          <span class="sec-category">BIOGRAPHY &amp; ASPIRATION</span>
+        </div>
+        <h2 class="sec-heading">CAREER OBJECTIVE</h2>
+        <div class="sec-decor-line"></div>
+      </div>
+
+      <div class="about-grid">
+        <!-- Left: Editorial Narrative -->
+        <div class="about-narrative-card">
+          <div class="quote-mark"><i class="fa-solid fa-quote-left"></i></div>
+
+          <p class="lead-statement">
+            Motivated B.Tech student with an interest in <strong>software development</strong>, <strong>programming</strong> and <strong>emerging technologies</strong>.
+          </p>
+
+          <p class="body-statement">
+            Possess a willingness to learn new technical skills, explore innovative ideas and apply theoretical knowledge to practical problems. Seeking internship opportunities to gain industry exposure, enhance technical abilities and contribute to meaningful projects.
+          </p>
+
+          <div class="narrative-highlights-box">
+            <h3 class="box-title"><i class="fa-solid fa-compass"></i> Engineering Philosophy</h3>
+            <ul class="clean-bullet-list">
+              <li>
+                <strong>Foundational Strength:</strong> Deepening logic building in Python and Java, prioritizing clean object-oriented architecture and efficient algorithms.
+              </li>
+              <li>
+                <strong>Industry Relevance:</strong> Designing scalable backend APIs with FastAPI and responsive interfaces that address real student and business needs.
+              </li>
+              <li>
+                <strong>Continuous Curiosity:</strong> Eager to absorb engineering best practices, collaborate across multidisciplinary teams, and take on ambitious technical challenges.
+              </li>
+            </ul>
+          </div>
+
+          <!-- Quick Metrics Bar -->
+          <div class="metrics-grid">
+            <div class="metric-box">
+              <span class="metric-val">2<small>ND</small></span>
+              <span class="metric-sub">Year B.Tech Student</span>
+            </div>
+            <div class="metric-box">
+              <span class="metric-val">SIH</span>
+              <span class="metric-sub">Hackathon Participant</span>
+            </div>
+            <div class="metric-box">
+              <span class="metric-val">100<small>%</small></span>
+              <span class="metric-sub">Commitment to Growth</span>
+            </div>
+            <div class="metric-box">
+              <span class="metric-val">FastAPI</span>
+              <span class="metric-sub">Modern API Architecture</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Personal Strengths Matrix -->
+        <div class="strengths-column">
+          <div class="strengths-header">
+            <h3 class="strengths-title"><i class="fa-solid fa-gem"></i> Core Personal Strengths</h3>
+            <span class="strengths-caption">Key attributes documented in resume</span>
+          </div>
+
+          <div class="strengths-cards-list">
+            <div class="strength-card">
+              <div class="strength-num">01</div>
+              <div class="strength-content">
+                <h4 class="strength-name">Quick Learner</h4>
+                <p class="strength-desc">Rapidly assimilates new languages, programming paradigms, and framework abstractions with proactive self-study and hands-on practice.</p>
+              </div>
+            </div>
+
+            <div class="strength-card">
+              <div class="strength-num">02</div>
+              <div class="strength-content">
+                <h4 class="strength-name">Problem-Solving Mindset</h4>
+                <p class="strength-desc">Deconstructs complex programmatic bottlenecks into modular, logical steps with methodical debugging and algorithmic intuition.</p>
+              </div>
+            </div>
+
+            <div class="strength-card">
+              <div class="strength-num">03</div>
+              <div class="strength-content">
+                <h4 class="strength-name">Team Collaboration</h4>
+                <p class="strength-desc">Proven experience collaborating harmoniously in team hackathons, academic sprints, ideation sessions, and peer reviews.</p>
+              </div>
+            </div>
+
+            <div class="strength-card">
+              <div class="strength-num">04</div>
+              <div class="strength-content">
+                <h4 class="strength-name">Adaptability</h4>
+                <p class="strength-desc">Smoothly adapts to evolving project specifications, changing toolsets, and new computational frameworks without losing momentum.</p>
+              </div>
+            </div>
+
+            <div class="strength-card">
+              <div class="strength-num">05</div>
+              <div class="strength-content">
+                <h4 class="strength-name">Willingness to Learn</h4>
+                <p class="strength-desc">Passionate about exploring modern backend systems, RESTful microservices, and modern web architectures beyond the classroom syllabus.</p>
+              </div>
+            </div>
+
+            <div class="strength-card">
+              <div class="strength-num">06</div>
+              <div class="strength-content">
+                <h4 class="strength-name">Creative Thinking</h4>
+                <p class="strength-desc">Translates academic concepts into creative solutions for real problems, evidenced by the Student Gap Analyser project.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ========================================================
+         SECTION 2: EDUCATION
+         ======================================================== -->
+    <section class="editorial-section education-section" id="education">
+      <div class="section-header-row">
+        <div class="sec-number-badge">
+          <span class="sec-num">02</span>
+          <span class="sec-category">ACADEMIC FOUNDATION</span>
+        </div>
+        <h2 class="sec-heading">EDUCATION</h2>
+        <div class="sec-decor-line"></div>
+      </div>
+
+      <div class="education-layout">
+        <!-- Main University Card -->
+        <div class="university-feature-card">
+          <div class="uni-card-badge">
+            <span class="badge-dot"></span>
+            <span>CURRENTLY PURSUING</span>
+          </div>
+
+          <div class="uni-card-content">
+            <div class="uni-icon-large">
+              <i class="fa-solid fa-building-columns"></i>
+            </div>
+            
+            <div class="uni-info">
+              <div class="degree-year-tag">2ND YEAR UNDERGRADUATE</div>
+              <h3 class="degree-title">Bachelor of Technology (B.Tech)</h3>
+              <h4 class="uni-name">Jain University, Bengaluru</h4>
+              <p class="degree-description">
+                Building a solid academic and practical groundwork in Computer Science &amp; Technology. Core coursework centers on Object-Oriented Programming, Data Structures, Web Technologies, Database Systems, Software Engineering Methodologies, and Project-Based Learning.
+              </p>
+
+              <!-- Coursework & Focus Areas -->
+              <div class="coursework-tags">
+                <span class="c-tag"><i class="fa-solid fa-check"></i> Python &amp; Java Programming</span>
+                <span class="c-tag"><i class="fa-solid fa-check"></i> Object-Oriented Principles (OOP)</span>
+                <span class="c-tag"><i class="fa-solid fa-check"></i> Web Technologies &amp; HTML5</span>
+                <span class="c-tag"><i class="fa-solid fa-check"></i> REST API Design (FastAPI)</span>
+                <span class="c-tag"><i class="fa-solid fa-check"></i> Algorithmic Thinking</span>
+                <span class="c-tag"><i class="fa-solid fa-check"></i> Project-Based Learning (PBL)</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="uni-card-footer">
+            <div class="footer-meta">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Bengaluru, Karnataka, India</span>
+            </div>
+            <div class="footer-meta">
+              <i class="fa-solid fa-calendar-check"></i>
+              <span>2024 &mdash; Present</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Academic Projects & Growth Track -->
+        <div class="academic-side-card">
+          <h3 class="side-card-title"><i class="fa-solid fa-laptop-code"></i> Project-Based Academic Rigor</h3>
+          <p class="side-card-text">
+            Jain University's curriculum emphasizes active, experiential development. Key highlights of academic engagement:
+          </p>
+
+          <div class="academic-milestones">
+            <div class="milestone-step">
+              <div class="step-bullet">1</div>
+              <div class="step-text">
+                <strong>Project-Based Learning Activities:</strong> Applied theoretical algorithms and database models directly into functioning codebases.
+              </div>
+            </div>
+            <div class="milestone-step">
+              <div class="step-bullet">2</div>
+              <div class="step-text">
+                <strong>Smart India Hackathon (SIH):</strong> Represented campus initiative tackling national problem statements with multidisciplinary teams.
+              </div>
+            </div>
+            <div class="milestone-step">
+              <div class="step-bullet">3</div>
+              <div class="step-text">
+                <strong>Collaborative Code Reviews:</strong> Participating actively in group problem-solving, code ideation, and peer architecture sessions.
+              </div>
+            </div>
+          </div>
+
+          <div class="institution-callout">
+            <i class="fa-solid fa-certificate"></i>
+            <div>
+              <strong>Official Affiliation:</strong>
+              <span>Jain Deemed-to-be University &bull; School of Engineering &amp; Technology</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ========================================================
+         SECTION 3: FLAGSHIP PROJECT & INTERACTIVE SIMULATOR
+         ======================================================== -->
+    <section class="editorial-section project-section" id="project-spotlight">
+      <div class="section-header-row">
+        <div class="sec-number-badge">
+          <span class="sec-num">03</span>
+          <span class="sec-category">FLAGSHIP WORK</span>
+        </div>
+        <h2 class="sec-heading">PROJECT SHOWCASE</h2>
+        <div class="sec-decor-line"></div>
+      </div>
+
+      <!-- Featured Project Card -->
+      <article class="featured-project-card">
+        <div class="project-tag-banner">
+          <span class="tag-flagship"><i class="fa-solid fa-star"></i> FEATURED ACADEMIC PROJECT</span>
+          <span class="tag-domain">EDTECH &bull; SKILL ANALYTICS &bull; FASTAPI</span>
+          <span class="tag-status">COMPLETED &amp; OPERATIONAL</span>
+        </div>
+
+        <div class="project-main-grid">
+          <!-- Left: Narrative & System Specs -->
+          <div class="project-info-pane">
+            <h3 class="project-headline">Student Gap Analyser</h3>
+            <p class="project-subheading">
+              Intelligent Skill Diagnostics &amp; Internship Readiness Engine
+            </p>
+
+            <div class="project-resume-quote">
+              <i class="fa-solid fa-quote-left"></i>
+              <p>
+                "An academic project focused on identifying students' existing skills, analysing skill gaps and helping them discover suitable learning opportunities. The project aims to support students in improving their technical abilities and preparing for internships and career opportunities."
+              </p>
+            </div>
+
+            <div class="project-details-block">
+              <h4 class="block-title"><i class="fa-solid fa-gears"></i> Key Innovations &amp; Architectural Highlights</h4>
+              <ul class="specs-list">
+                <li>
+                  <strong>Automated Skill Gap Mapping:</strong> Compares a student's self-assessed and demonstrated competencies against benchmark role taxonomies (Backend Engineer, Python Developer, Web Developer).
+                </li>
+                <li>
+                  <strong>FastAPI RESTful Backend:</strong> High-performance Python backend serving structured JSON diagnostic outputs, score calculations, and remedial resources with sub-millisecond latencies.
+                </li>
+                <li>
+                  <strong>Personalized Learning Pathways:</strong> Dynamically calculates tailored technical recommendations to transition students into industry-ready candidates for internships.
+                </li>
+                <li>
+                  <strong>Modular Architecture:</strong> Decoupled scoring logic, skill weight vectors, and responsive presentation layer ensuring seamless future extensions.
+                </li>
+              </ul>
+            </div>
+
+            <!-- Tech Badges -->
+            <div class="tech-stack-row">
+              <span class="tech-badge"><i class="fa-brands fa-python"></i> Python 3.11</span>
+              <span class="tech-badge"><i class="fa-solid fa-bolt"></i> FastAPI</span>
+              <span class="tech-badge"><i class="fa-brands fa-html5"></i> HTML5 / CSS3</span>
+              <span class="tech-badge"><i class="fa-solid fa-network-wired"></i> REST API</span>
+              <span class="tech-badge"><i class="fa-solid fa-database"></i> JSON Data Modeling</span>
+              <span class="tech-badge"><i class="fa-solid fa-calculator"></i> Gap Scoring Algorithm</span>
+            </div>
+
+            <div class="project-action-buttons">
+              <button class="btn-editorial-primary" id="open-case-study-btn">
+                <i class="fa-solid fa-file-code"></i>
+                <span>EXPLORE ARCHITECTURE MODAL</span>
+              </button>
+              <a href="#simulator" class="btn-editorial-secondary">
+                <i class="fa-solid fa-sliders"></i>
+                <span>TRY LIVE SIMULATOR BELOW</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Live Simulator Widget -->
+          <div class="project-simulator-pane" id="simulator">
+            <div class="simulator-wrapper">
+              <div class="simulator-header">
+                <div class="sim-badge">
+                  <span class="pulse-dot"></span>
+                  <span>LIVE DEMO SIMULATOR</span>
+                </div>
+                <h4 class="sim-title">Test the "Student Gap Analyser"</h4>
+                <p class="sim-instructions">Select your desired career path and check off your current skills to calculate readiness score and personalized learning gaps in real time!</p>
+              </div>
+
+              <!-- Track Selector -->
+              <div class="sim-control-group">
+                <label for="career-track-select" class="sim-label">1. Choose Desired Internship Track:</label>
+                <div class="custom-select-wrapper">
+                  <select id="career-track-select" class="custom-select">
+                    <option value="python-backend">Python &amp; FastAPI Backend Developer</option>
+                    <option value="full-stack">Full-Stack Web Developer (Python + Web)</option>
+                    <option value="java-developer">Core Java &amp; Software Developer</option>
+                    <option value="sde-general">General SDE Intern (Data Structures &amp; Logic)</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Skill Checkboxes -->
+              <div class="sim-control-group">
+                <label class="sim-label">2. Select Your Existing Skills:</label>
+                <div class="skill-checklist" id="sim-skill-checklist">
+                  <!-- Dynamically populated via JS, fallback static -->
+                  <label class="check-item"><input type="checkbox" value="python" checked> <span>Python Fundamentals</span></label>
+                  <label class="check-item"><input type="checkbox" value="oop" checked> <span>Object-Oriented Programming (OOP)</span></label>
+                  <label class="check-item"><input type="checkbox" value="html-css" checked> <span>HTML5 &amp; CSS3 Layouts</span></label>
+                  <label class="check-item"><input type="checkbox" value="fastapi"> <span>FastAPI &amp; REST APIs</span></label>
+                  <label class="check-item"><input type="checkbox" value="java"> <span>Java Core &amp; Syntax</span></label>
+                  <label class="check-item"><input type="checkbox" value="logic" checked> <span>Problem-Solving &amp; Logic</span></label>
+                  <label class="check-item"><input type="checkbox" value="sql"> <span>SQL &amp; Database Basics</span></label>
+                  <label class="check-item"><input type="checkbox" value="git"> <span>Git &amp; Version Control</span></label>
+                </div>
+              </div>
+
+              <!-- Trigger Button -->
+              <button type="button" id="run-gap-analysis-btn" class="btn-run-sim">
+                <i class="fa-solid fa-play"></i>
+                <span>CALCULATE SKILL GAP &amp; RECOMMENDATIONS</span>
+              </button>
+
+              <!-- Dynamic Result Display -->
+              <div class="sim-output-panel" id="sim-output-panel" aria-live="polite">
+                <div class="result-top-stats">
+                  <div class="score-radial-box">
+                    <div class="score-circle-val" id="sim-score-val">75%</div>
+                    <div class="score-label">Internship Readiness</div>
+                  </div>
+                  <div class="score-verdict" id="sim-verdict">
+                    <span class="verdict-tag ready-tag">Strong Academic Base</span>
+                    <p class="verdict-text">You have strong foundations. Focus on backend frameworks and database integration to achieve 100% readiness!</p>
+                  </div>
+                </div>
+
+                <div class="gap-findings">
+                  <div class="findings-block">
+                    <span class="findings-header"><i class="fa-solid fa-triangle-exclamation"></i> Identified Skill Gaps:</span>
+                    <ul class="findings-tags" id="sim-gaps-list">
+                      <li>FastAPI Async Routing</li>
+                      <li>SQL Database Modeling</li>
+                      <li>Git Branch Workflows</li>
+                    </ul>
+                  </div>
+
+                  <div class="findings-block">
+                    <span class="findings-header"><i class="fa-solid fa-lightbulb"></i> Recommended Next Steps:</span>
+                    <p class="recommend-text" id="sim-recommend-text">
+                      Complete a hands-on project integrating FastAPI with SQLite, and deploy a REST endpoint to practice real-world web delivery.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+
+    <!-- ========================================================
+         SECTION 4: TECHNICAL SKILLS & CAREER INTERESTS
+         ======================================================== -->
+    <section class="editorial-section skills-section" id="skills">
+      <div class="section-header-row">
+        <div class="sec-number-badge">
+          <span class="sec-num">04</span>
+          <span class="sec-category">TECHNICAL PROFILE</span>
+        </div>
+        <h2 class="sec-heading">SKILLS &amp; INTERESTS</h2>
+        <div class="sec-decor-line"></div>
+      </div>
+
+      <!-- Skills Tab Filter -->
+      <div class="skills-filter-tabs" role="tablist">
+        <button class="filter-tab active" data-filter="all" role="tab" aria-selected="true">ALL COMPETENCIES</button>
+        <button class="filter-tab" data-filter="languages" role="tab" aria-selected="false">PROGRAMMING LANGUAGES</button>
+        <button class="filter-tab" data-filter="web" role="tab" aria-selected="false">WEB &amp; FRAMEWORKS</button>
+        <button class="filter-tab" data-filter="core" role="tab" aria-selected="false">CORE FOUNDATIONS</button>
+        <button class="filter-tab" data-filter="interests" role="tab" aria-selected="false">CAREER INTERESTS</button>
+      </div>
+
+      <div class="skills-grid" id="skills-grid-container">
+
+        <!-- Card: Python -->
+        <div class="skill-card" data-category="languages">
+          <div class="skill-card-top">
+            <div class="skill-icon"><i class="fa-brands fa-python"></i></div>
+            <span class="skill-type-tag">PRIMARY LANGUAGE</span>
+          </div>
+          <h3 class="skill-title">Python</h3>
+          <p class="skill-desc">
+            Extensive experience with object-oriented Python, scripting, algorithmic logic, list comprehensions, and data processing. Primary language for backend engineering and the Student Gap Analyser.
+          </p>
+          <div class="skill-meter-wrap">
+            <div class="skill-meter-label">
+              <span>Proficiency &bull; Advanced Academic</span>
+              <span>85%</span>
+            </div>
+            <div class="skill-meter-track">
+              <div class="skill-meter-fill" style="--level: 85%;"></div>
+            </div>
+          </div>
+          <div class="skill-subtags">
+            <span>FastAPI</span>
+            <span>Data Structures</span>
+            <span>Scripting</span>
+          </div>
+        </div>
+
+        <!-- Card: Java -->
+        <div class="skill-card" data-category="languages">
+          <div class="skill-card-top">
+            <div class="skill-icon"><i class="fa-brands fa-java"></i></div>
+            <span class="skill-type-tag">OBJECT-ORIENTED</span>
+          </div>
+          <h3 class="skill-title">Java</h3>
+          <p class="skill-desc">
+            Solid foundation in core Java syntax, class hierarchies, inheritance, encapsulation, polymorphism, exception handling, and standard library collections.
+          </p>
+          <div class="skill-meter-wrap">
+            <div class="skill-meter-label">
+              <span>Proficiency &bull; Core Foundations</span>
+              <span>80%</span>
+            </div>
+            <div class="skill-meter-track">
+              <div class="skill-meter-fill" style="--level: 80%;"></div>
+            </div>
+          </div>
+          <div class="skill-subtags">
+            <span>OOP Design</span>
+            <span>Collections</span>
+            <span>Class Modeling</span>
+          </div>
+        </div>
+
+        <!-- Card: FastAPI -->
+        <div class="skill-card" data-category="web">
+          <div class="skill-card-top">
+            <div class="skill-icon"><i class="fa-solid fa-bolt"></i></div>
+            <span class="skill-type-tag">BACKEND FRAMEWORK</span>
+          </div>
+          <h3 class="skill-title">FastAPI</h3>
+          <p class="skill-desc">
+            Modern, asynchronous Python framework utilized for architecting fast RESTful API endpoints, request validation with Pydantic, JSON payloads, and automated OpenAPI documentation.
+          </p>
+          <div class="skill-meter-wrap">
+            <div class="skill-meter-label">
+              <span>Proficiency &bull; Project Application</span>
+              <span>82%</span>
+            </div>
+            <div class="skill-meter-track">
+              <div class="skill-meter-fill" style="--level: 82%;"></div>
+            </div>
+          </div>
+          <div class="skill-subtags">
+            <span>REST Endpoints</span>
+            <span>Pydantic Models</span>
+            <span>Swagger Docs</span>
+          </div>
+        </div>
+
+        <!-- Card: HTML & Web Technologies -->
+        <div class="skill-card" data-category="web">
+          <div class="skill-card-top">
+            <div class="skill-icon"><i class="fa-brands fa-html5"></i></div>
+            <span class="skill-type-tag">WEB TECHNOLOGIES</span>
+          </div>
+          <h3 class="skill-title">HTML &amp; Web Standards</h3>
+          <p class="skill-desc">
+            Semantic HTML5 structure, responsive layout principles with CSS, accessibility landmarks, form validations, and intuitive user interfaces.
+          </p>
+          <div class="skill-meter-wrap">
+            <div class="skill-meter-label">
+              <span>Proficiency &bull; Frontend Fundamentals</span>
+              <span>88%</span>
+            </div>
+            <div class="skill-meter-track">
+              <div class="skill-meter-fill" style="--level: 88%;"></div>
+            </div>
+          </div>
+          <div class="skill-subtags">
+            <span>Semantic HTML5</span>
+            <span>Responsive Web</span>
+            <span>CSS Layouts</span>
+          </div>
+        </div>
+
+        <!-- Card: Core Skills -->
+        <div class="skill-card" data-category="core">
+          <div class="skill-card-top">
+            <div class="skill-icon"><i class="fa-solid fa-brain"></i></div>
+            <span class="skill-type-tag">FOUNDATIONAL</span>
+          </div>
+          <h3 class="skill-title">Problem-Solving &amp; Logic</h3>
+          <p class="skill-desc">
+            Analytical thinking, algorithmic problem formulation, decomposition of multi-tier systems, edge-case analysis, and structured approach to software debugging.
+          </p>
+          <div class="skill-meter-wrap">
+            <div class="skill-meter-label">
+              <span>Proficiency &bull; Analytical Aptitude</span>
+              <span>90%</span>
+            </div>
+            <div class="skill-meter-track">
+              <div class="skill-meter-fill" style="--level: 90%;"></div>
+            </div>
+          </div>
+          <div class="skill-subtags">
+            <span>Modular Thinking</span>
+            <span>Edge Cases</span>
+            <span>Clean Code</span>
+          </div>
+        </div>
+
+        <!-- Card: Basic Programming Concepts -->
+        <div class="skill-card" data-category="core">
+          <div class="skill-card-top">
+            <div class="skill-icon"><i class="fa-solid fa-cubes"></i></div>
+            <span class="skill-type-tag">ENGINEERING DISCIPLINE</span>
+          </div>
+          <h3 class="skill-title">Basic Programming Concepts</h3>
+          <p class="skill-desc">
+            Firm grounding in variables, control flow, functions, loops, memory references, modular design, recursion, and object-oriented abstractions.
+          </p>
+          <div class="skill-meter-wrap">
+            <div class="skill-meter-label">
+              <span>Proficiency &bull; Core Principles</span>
+              <span>88%</span>
+            </div>
+            <div class="skill-meter-track">
+              <div class="skill-meter-fill" style="--level: 88%;"></div>
+            </div>
+          </div>
+          <div class="skill-subtags">
+            <span>Control Flow</span>
+            <span>Functions</span>
+            <span>Modularity</span>
+          </div>
+        </div>
+
+        <!-- Card: Software Development Interest -->
+        <div class="skill-card interest-card" data-category="interests">
+          <div class="skill-card-top">
+            <div class="skill-icon"><i class="fa-solid fa-code-branch"></i></div>
+            <span class="skill-type-tag">CAREER INTEREST</span>
+          </div>
+          <h3 class="skill-title">Software Development</h3>
+          <p class="skill-desc">
+            Committed to building scalable backend systems, clean microservices, maintainable code architectures, and production-grade enterprise software.
+          </p>
+          <div class="interest-callout-pill">
+            <i class="fa-solid fa-circle-check"></i>
+            <span>Primary Focus &bull; Seeking SDE Internships</span>
+          </div>
+        </div>
+
+        <!-- Card: Web Development Interest -->
+        <div class="skill-card interest-card" data-category="interests">
+          <div class="skill-card-top">
+            <div class="skill-icon"><i class="fa-solid fa-laptop-code"></i></div>
+            <span class="skill-type-tag">CAREER INTEREST</span>
+          </div>
+          <h3 class="skill-title">Web Development</h3>
+          <p class="skill-desc">
+            Eager to engineer responsive full-stack applications integrating seamless REST APIs, dynamic client interfaces, and user-centered digital products.
+          </p>
+          <div class="interest-callout-pill">
+            <i class="fa-solid fa-circle-check"></i>
+            <span>Full-Stack &bull; API Integration</span>
+          </div>
+        </div>
+
+        <!-- Card: Technology & Innovation Interest -->
+        <div class="skill-card interest-card" data-category="interests">
+          <div class="skill-card-top">
+            <div class="skill-icon"><i class="fa-solid fa-lightbulb"></i></div>
+            <span class="skill-type-tag">CAREER INTEREST</span>
+          </div>
+          <h3 class="skill-title">Technology &amp; Innovation</h3>
+          <p class="skill-desc">
+            Passionate about exploring modern emerging technologies, automated tooling, developer productivity systems, and participating in hackathons to solve community problems.
+          </p>
+          <div class="interest-callout-pill">
+            <i class="fa-solid fa-circle-check"></i>
+            <span>Hackathons &bull; Emerging Tech</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================================
+         SECTION 5: ACHIEVEMENTS & ACTIVITIES
+         ======================================================== -->
+    <section class="editorial-section achievements-section" id="achievements">
+      <div class="section-header-row">
+        <div class="sec-number-badge">
+          <span class="sec-num">05</span>
+          <span class="sec-category">EXPERIENCE &amp; HONORS</span>
+        </div>
+        <h2 class="sec-heading">ACHIEVEMENTS &amp; ACTIVITIES</h2>
+        <div class="sec-decor-line"></div>
+      </div>
+
+      <div class="achievements-timeline">
+        <!-- Item 1: Smart India Hackathon -->
+        <div class="timeline-row highlight-row">
+          <div class="timeline-time-col">
+            <span class="timeline-badge">NATIONAL HACKATHON</span>
+            <span class="timeline-year">2024 &mdash; 2025</span>
+          </div>
+
+          <div class="timeline-dot-col">
+            <div class="timeline-node"><i class="fa-solid fa-trophy"></i></div>
+            <div class="timeline-stem"></div>
+          </div>
+
+          <div class="timeline-body-card">
+            <div class="timeline-header-block">
+              <h3 class="activity-title">Participated in Smart India Hackathon (SIH)</h3>
+              <span class="activity-org">Government of India &bull; Ministry of Education Innovation Cell</span>
+            </div>
+
+            <p class="activity-desc">
+              Selected to participate in the prestigious <strong>Smart India Hackathon (SIH)</strong>, one of India's largest national open innovation competitions. Collaborated in high-intensity sprints with teammates to research problem statements, engineer technological solutions, and pitch functional software prototypes under strict deadlines.
+            </p>
+
+            <div class="activity-takeaways">
+              <span class="takeaway-chip"><i class="fa-solid fa-users"></i> Cross-functional Team Ideation</span>
+              <span class="takeaway-chip"><i class="fa-solid fa-stopwatch"></i> Rapid Prototyping</span>
+              <span class="takeaway-chip"><i class="fa-solid fa-lightbulb"></i> National Problem Solving</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 2: Project-Based Learning -->
+        <div class="timeline-row">
+          <div class="timeline-time-col">
+            <span class="timeline-badge">ACADEMIC RIGOR</span>
+            <span class="timeline-year">JAIN UNIVERSITY</span>
+          </div>
+
+          <div class="timeline-dot-col">
+            <div class="timeline-node"><i class="fa-solid fa-diagram-project"></i></div>
+            <div class="timeline-stem"></div>
+          </div>
+
+          <div class="timeline-body-card">
+            <div class="timeline-header-block">
+              <h3 class="activity-title">Academic Project-Based Learning Activities</h3>
+              <span class="activity-org">Department of Computer Science &amp; Engineering</span>
+            </div>
+
+            <p class="activity-desc">
+              Actively participated in continuous hands-on project courses throughout the academic semesters. Spearheaded real-world implementation milestones, bridging abstract textbook concepts into executable code solutions, including database schema normalization and REST API endpoints.
+            </p>
+
+            <div class="activity-takeaways">
+              <span class="takeaway-chip"><i class="fa-solid fa-check"></i> Hands-on Implementation</span>
+              <span class="takeaway-chip"><i class="fa-solid fa-check"></i> Modular System Architecture</span>
+              <span class="takeaway-chip"><i class="fa-solid fa-check"></i> Technical Documentation</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3: Collaborative Problem-Solving -->
+        <div class="timeline-row">
+          <div class="timeline-time-col">
+            <span class="timeline-badge">TEAMWORK &amp; LEADERSHIP</span>
+            <span class="timeline-year">CONTINUOUS</span>
+          </div>
+
+          <div class="timeline-dot-col">
+            <div class="timeline-node"><i class="fa-solid fa-handshake-simple"></i></div>
+          </div>
+
+          <div class="timeline-body-card">
+            <div class="timeline-header-block">
+              <h3 class="activity-title">Collaborated with Team Members During Problem-Solving &amp; Ideation</h3>
+              <span class="activity-org">Academic &amp; Peer Groups</span>
+            </div>
+
+            <p class="activity-desc">
+              Fostered open dialogue, constructive feedback, and mutual mentorship during group coding sessions and team brainstorms. Championed pragmatic decision-making, task decomposition, and milestone tracking to ensure collective project success.
+            </p>
+
+            <div class="activity-takeaways">
+              <span class="takeaway-chip"><i class="fa-solid fa-comments"></i> Technical Communication</span>
+              <span class="takeaway-chip"><i class="fa-solid fa-arrows-split-up-and-left"></i> Task Decomposition</span>
+              <span class="takeaway-chip"><i class="fa-solid fa-heart"></i> Empathy &amp; Shared Vision</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ========================================================
+         SECTION 6: CONTACT & INVITATION
+         ======================================================== -->
+    <section class="editorial-section contact-section" id="contact">
+      <div class="section-header-row">
+        <div class="sec-number-badge">
+          <span class="sec-num">06</span>
+          <span class="sec-category">CONNECT &amp; ENGAGE</span>
+        </div>
+        <h2 class="sec-heading">GET IN TOUCH</h2>
+        <div class="sec-decor-line"></div>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Left: Contact Details & Direct Actions -->
+        <div class="contact-card-editorial">
+          <h3 class="contact-card-title">Let's Connect &amp; Collaborate</h3>
+          <p class="contact-card-lead">
+            I am actively seeking <strong>software engineering internships</strong>, project collaborations, and mentorship opportunities. Feel free to reach out directly via email, phone, or scan the QR code!
+          </p>
+
+          <!-- Contact Details List -->
+          <div class="contact-direct-items">
+            <!-- Email -->
+            <div class="direct-item">
+              <div class="direct-icon"><i class="fa-regular fa-envelope"></i></div>
+              <div class="direct-info">
+                <span class="direct-label">EMAIL ADDRESS</span>
+                <a href="mailto:thejuck28@gmail.com" class="direct-val">thejuck28@gmail.com</a>
+              </div>
+              <button class="btn-copy-chip copy-email-btn" data-copy="thejuck28@gmail.com" title="Copy email">
+                <i class="fa-regular fa-copy"></i>
+                <span>Copy</span>
+              </button>
+            </div>
+
+            <!-- Phone -->
+            <div class="direct-item">
+              <div class="direct-icon"><i class="fa-solid fa-phone"></i></div>
+              <div class="direct-info">
+                <span class="direct-label">PHONE / WHATSAPP</span>
+                <a href="tel:+919524329827" class="direct-val">+91 9524329827</a>
+              </div>
+              <a href="tel:+919524329827" class="btn-copy-chip" title="Call directly">
+                <i class="fa-solid fa-phone-flip"></i>
+                <span>Call</span>
+              </a>
+            </div>
+
+            <!-- University / Location -->
+            <div class="direct-item">
+              <div class="direct-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="direct-info">
+                <span class="direct-label">INSTITUTION &amp; CITY</span>
+                <span class="direct-val">Jain University, Bengaluru, India</span>
+              </div>
+              <span class="btn-copy-chip static-chip">
+                <i class="fa-solid fa-map-pin"></i>
+                <span>IST</span>
+              </span>
+            </div>
+          </div>
+
+          <!-- Scannable QR Code Box -->
+          <div class="qr-connection-box">
+            <div class="qr-image-wrapper">
+              <img src="assets/qr-contact.svg" alt="Scan QR code to email CK Thejaswini" class="qr-code-img">
+            </div>
+            <div class="qr-info-content">
+              <h4 class="qr-heading"><i class="fa-solid fa-qrcode"></i> Quick Mobile Connect</h4>
+              <p class="qr-subtext">Scan this code with your smartphone camera to initiate an instant email to <strong>thejuck28@gmail.com</strong>.</p>
+              <button class="btn-editorial-secondary btn-sm" data-open-resume>
+                <i class="fa-regular fa-file-pdf"></i>
+                <span>Printable Resume Modal</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Interactive Message Form -->
+        <div class="contact-form-card">
+          <div class="form-header">
+            <h3 class="form-title"><i class="fa-regular fa-paper-plane"></i> Send Direct Message</h3>
+            <p class="form-subtitle">Looking for an intern or have a question? Leave a note and I will respond promptly!</p>
+          </div>
+
+          <form id="portfolio-contact-form" class="editorial-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="form-name" class="form-label">Your Name <span class="req">*</span></label>
+                <input type="text" id="form-name" name="name" class="form-input" placeholder="e.g. Aditi Sharma" required>
+                <span class="form-error-msg" id="name-error">Please enter your name.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="form-email" class="form-label">Your Email <span class="req">*</span></label>
+                <input type="email" id="form-email" name="email" class="form-input" placeholder="e.g. aditi@company.com" required>
+                <span class="form-error-msg" id="email-error">Please provide a valid email.</span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="form-subject" class="form-label">Subject / Topic <span class="req">*</span></label>
+              <input type="text" id="form-subject" name="subject" class="form-input" placeholder="e.g. SDE Internship Opportunity / Collaboration" required>
+              <span class="form-error-msg" id="subject-error">Please add a subject.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="form-message" class="form-label">Message Details <span class="req">*</span></label>
+              <textarea id="form-message" name="message" rows="5" class="form-textarea" placeholder="Hello Thejaswini, I came across your portfolio and project..." required></textarea>
+              <span class="form-error-msg" id="message-error">Please enter your message.</span>
+            </div>
+
+            <button type="submit" id="form-submit-btn" class="btn-form-submit">
+              <span class="btn-text">TRANSMIT MESSAGE</span>
+              <i class="fa-solid fa-arrow-right-long"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ========================================================
+       FOOTER: Editorial Bottom Colophon
+       ======================================================== -->
+  <footer class="editorial-footer">
+    <div class="footer-container">
+      <div class="footer-top-row">
+        <div class="footer-brand">
+          <span class="footer-logo">CK</span>
+          <div>
+            <h4 class="footer-name">CK THEJASWINI</h4>
+            <p class="footer-tagline">B.Tech Student &bull; Aspiring Software Developer &bull; Jain University</p>
+          </div>
+        </div>
+
+        <div class="footer-links-group">
+          <a href="#about" class="footer-link">About</a>
+          <a href="#education" class="footer-link">Education</a>
+          <a href="#project-spotlight" class="footer-link">Projects</a>
+          <a href="#skills" class="footer-link">Skills</a>
+          <a href="#achievements" class="footer-link">Achievements</a>
+          <a href="#contact" class="footer-link">Contact</a>
+        </div>
+
+        <div class="footer-back-top">
+          <a href="#hero" class="btn-back-top" aria-label="Back to top">
+            <span>BACK TO TOP</span>
+            <i class="fa-solid fa-arrow-up"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom-row">
+        <p class="copyright-text">
+          &copy; 2026 CK THEJASWINI. All rights reserved. Crafted with clean semantic HTML, modular CSS, and JavaScript.
+        </p>
+        <div class="footer-meta-pill">
+          <span>Bengaluru, India</span>
+          <span class="dot-separator">&bull;</span>
+          <span id="footer-ist-clock">IST</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ========================================================
+       MODAL 1: INTERACTIVE PRINTABLE RESUME (MATCHING REFERENCE)
+       ======================================================== -->
+  <div id="resume-modal" class="editorial-modal" aria-hidden="true" role="dialog" aria-labelledby="resume-modal-title">
+    <div class="modal-backdrop" id="modal-backdrop-resume"></div>
+    
+    <div class="modal-container resume-modal-container">
+      <!-- Modal Utility Bar -->
+      <div class="modal-control-bar">
+        <div class="modal-control-left">
+          <span class="modal-badge"><i class="fa-solid fa-file-invoice"></i> OFFICIAL RESUME VIEW</span>
+          <span class="modal-file-name">CK_Thejaswini_Resume.pdf</span>
+        </div>
+
+        <div class="modal-control-right">
+          <button type="button" id="modal-print-btn" class="modal-action-btn primary-action" title="Print or save as PDF">
+            <i class="fa-solid fa-print"></i>
+            <span>PRINT / SAVE PDF</span>
+          </button>
+
+          <button type="button" id="modal-copy-email-btn" class="modal-action-btn copy-email-btn" data-copy="thejuck28@gmail.com" title="Copy email">
+            <i class="fa-regular fa-copy"></i>
+            <span>COPY EMAIL</span>
+          </button>
+
+          <button type="button" class="modal-close-btn" id="modal-close-resume-btn" aria-label="Close resume modal">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Printable Resume Sheet (Rendered 1:1 matching user resume & reference template) -->
+      <div class="printable-resume-sheet" id="printable-resume-sheet">
+        
+        <!-- Resume Header / Top Band -->
+        <header class="res-header-band">
+          <div class="res-avatar-wrapper">
+            <img src="assets/portrait.jpg" alt="CK Thejaswini" class="res-avatar-img">
+          </div>
+          <div class="res-header-content">
+            <h1 class="res-name" id="resume-modal-title">CK THEJASWINI</h1>
+            <p class="res-title">B.Tech Student | Aspiring Software Developer</p>
+          </div>
+        </header>
+
+        <!-- Two Column Layout (Taupe Sidebar + White Main Body) -->
+        <div class="res-layout-body">
+          
+          <!-- Left Column (Taupe Sidebar) -->
+          <aside class="res-sidebar">
+            
+            <!-- Contact Info -->
+            <div class="res-block res-contact-block">
+              <div class="res-contact-item">
+                <i class="fa-regular fa-envelope"></i>
+                <a href="mailto:thejuck28@gmail.com">thejuck28@gmail.com</a>
+              </div>
+              <div class="res-contact-item">
+                <i class="fa-solid fa-phone"></i>
+                <a href="tel:9524329827">9524329827</a>
+              </div>
+              <div class="res-contact-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Jain University</span>
+              </div>
+            </div>
+
+            <!-- Education -->
+            <div class="res-block">
+              <h2 class="res-sidebar-heading">EDUCATION</h2>
+              <div class="res-sidebar-item">
+                <h3 class="res-item-title">Bachelor of Technology (B.Tech)</h3>
+                <p class="res-item-inst">Jain University</p>
+                <p class="res-item-meta">Currently pursuing 2nd Year</p>
+              </div>
+            </div>
+
+            <!-- Technical Skills -->
+            <div class="res-block">
+              <h2 class="res-sidebar-heading">TECHNICAL SKILLS</h2>
+              
+              <div class="res-skill-group">
+                <h4 class="res-skill-cat">Programming Languages</h4>
+                <p class="res-skill-list">Python, Java</p>
+              </div>
+
+              <div class="res-skill-group">
+                <h4 class="res-skill-cat">Web Technologies</h4>
+                <p class="res-skill-list">HTML</p>
+              </div>
+
+              <div class="res-skill-group">
+                <h4 class="res-skill-cat">Frameworks</h4>
+                <p class="res-skill-list">FastAPI</p>
+              </div>
+
+              <div class="res-skill-group">
+                <h4 class="res-skill-cat">Core Skills</h4>
+                <p class="res-skill-list">Problem-solving, logical thinking and basic programming concepts</p>
+              </div>
+            </div>
+
+            <!-- Career Interests -->
+            <div class="res-block">
+              <h2 class="res-sidebar-heading">CAREER INTERESTS</h2>
+              <ul class="res-bullet-list">
+                <li>Software Development</li>
+                <li>Web Development</li>
+                <li>Technology &amp; Innovation</li>
+              </ul>
+            </div>
+
+          </aside>
+
+          <!-- Right Column (Main White Content) -->
+          <main class="res-main">
+            
+            <!-- Career Objective -->
+            <section class="res-section">
+              <h2 class="res-section-title">CAREER OBJECTIVE</h2>
+              <p class="res-paragraph">
+                Motivated B.Tech student with an interest in software development, programming and emerging technologies. Possess a willingness to learn new technical skills, explore innovative ideas and apply theoretical knowledge to practical problems. Seeking internship opportunities to gain industry exposure, enhance technical abilities and contribute to meaningful projects.
+              </p>
+            </section>
+
+            <!-- Projects -->
+            <section class="res-section">
+              <h2 class="res-section-title">PROJECTS</h2>
+              
+              <div class="res-project-item">
+                <h3 class="res-project-title">Student Gap Analyser</h3>
+                <p class="res-paragraph">
+                  An academic project focused on identifying students' existing skills, analysing skill gaps and helping them discover suitable learning opportunities. The project aims to support students in improving their technical abilities and preparing for internships and career opportunities.
+                </p>
+              </div>
+            </section>
+
+            <!-- Achievements & Activities -->
+            <section class="res-section">
+              <h2 class="res-section-title">ACHIEVEMENTS &amp; ACTIVITIES</h2>
+              <ul class="res-bullet-list res-main-list">
+                <li>Participated in Smart India Hackathon (SIH).</li>
+                <li>Participated in academic project-based learning activities.</li>
+                <li>Collaborated with team members during problem-solving and ideation activities.</li>
+              </ul>
+            </section>
+
+            <!-- Personal Strengths -->
+            <section class="res-section">
+              <h2 class="res-section-title">PERSONAL STRENGTHS</h2>
+              <div class="res-strengths-grid">
+                <div class="res-str-col">
+                  <div class="res-bullet-point">&bull; Quick learner</div>
+                  <div class="res-bullet-point">&bull; Problem-solving mindset</div>
+                  <div class="res-bullet-point">&bull; Team collaboration</div>
+                </div>
+                <div class="res-str-col">
+                  <div class="res-bullet-point">&bull; Adaptability</div>
+                  <div class="res-bullet-point">&bull; Willingness to learn</div>
+                  <div class="res-bullet-point">&bull; Creative thinking</div>
+                </div>
+              </div>
+            </section>
+
+          </main>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ========================================================
+       MODAL 2: PROJECT ARCHITECTURE CASE STUDY MODAL
+       ======================================================== -->
+  <div id="case-study-modal" class="editorial-modal" aria-hidden="true" role="dialog" aria-labelledby="case-study-modal-title">
+    <div class="modal-backdrop" id="modal-backdrop-case"></div>
+    
+    <div class="modal-container case-modal-container">
+      <div class="modal-control-bar">
+        <div class="modal-control-left">
+          <span class="modal-badge"><i class="fa-solid fa-code"></i> TECHNICAL CASE STUDY</span>
+          <span class="modal-file-name">Student_Gap_Analyser_Architecture.md</span>
+        </div>
+
+        <div class="modal-control-right">
+          <button type="button" class="modal-close-btn" id="modal-close-case-btn" aria-label="Close case study modal">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="case-study-content">
+        <div class="case-header">
+          <span class="case-meta">ACADEMIC FLAGSHIP &bull; JAIN UNIVERSITY &bull; FASTAPI + PYTHON</span>
+          <h2 class="case-title" id="case-study-modal-title">Student Gap Analyser: System Architecture &amp; Implementation</h2>
+          <p class="case-lead">
+            An automated competency evaluation platform designed to systematically identify curriculum-to-industry voids and construct actionable upskilling roadmaps for undergraduate engineers.
+          </p>
+        </div>
+
+        <!-- 4-Stage Architectural Pipeline -->
+        <div class="case-pipeline-grid">
+          <div class="pipeline-card">
+            <div class="pipe-num">STAGE 01</div>
+            <h4 class="pipe-title">Candidate Profiling</h4>
+            <p class="pipe-desc">Ingests student-selected programming languages, frameworks, and self-reported project milestones via validated schema.</p>
+          </div>
+          <div class="pipeline-card">
+            <div class="pipe-num">STAGE 02</div>
+            <h4 class="pipe-title">Role Taxonomy Mapping</h4>
+            <p class="pipe-desc">Matches declared competencies against dynamic industry competency vectors (Backend, Full Stack, SDE Core).</p>
+          </div>
+          <div class="pipeline-card">
+            <div class="pipe-num">STAGE 03</div>
+            <h4 class="pipe-title">Gap Differential Engine</h4>
+            <p class="pipe-desc">Calculates readiness coefficients and ranks missing technical dependencies using Python algorithmic evaluation.</p>
+          </div>
+          <div class="pipeline-card">
+            <div class="pipe-num">STAGE 04</div>
+            <h4 class="pipe-title">Curated Roadmap</h4>
+            <p class="pipe-desc">Outputs structured JSON payloads containing step-by-step remedial projects and internship preparation milestones.</p>
+          </div>
+        </div>
+
+        <!-- FastAPI Code Sample & Endpoints -->
+        <div class="case-code-section">
+          <h3 class="case-subheading"><i class="fa-solid fa-terminal"></i> FastAPI API Endpoint Design</h3>
+          <div class="code-terminal-box">
+            <div class="terminal-bar">
+              <span class="term-dot dot-red"></span>
+              <span class="term-dot dot-yellow"></span>
+              <span class="term-dot dot-green"></span>
+              <span class="term-filename">main.py (FastAPI Routing &amp; Scoring)</span>
+            </div>
+            <pre class="terminal-code"><code><span class="c-keyword">from</span> fastapi <span class="c-keyword">import</span> FastAPI, HTTPException
+<span class="c-keyword">from</span> pydantic <span class="c-keyword">import</span> BaseModel
+<span class="c-keyword">from</span> typing <span class="c-keyword">import</span> List, Dict
+
+app = FastAPI(title=<span class="c-str">"Student Gap Analyser API"</span>, version=<span class="c-str">"1.0.0"</span>)
+
+<span class="c-keyword">class</span> <span class="c-class">StudentProfile</span>(BaseModel):
+    student_name: str
+    target_role: str
+    current_skills: List[str]
+
+<span class="c-decorator">@app.post</span>(<span class="c-str">"/api/v1/analyze-gap"</span>)
+<span class="c-keyword">async def</span> <span class="c-func">analyze_skill_gap</span>(profile: StudentProfile) -> Dict:
+    <span class="c-comment"># Evaluates candidate skills against benchmark role taxonomy</span>
+    result = evaluate_competency_vector(
+        skills=profile.current_skills, 
+        role=profile.target_role
+    )
+    <span class="c-keyword">return</span> {
+        <span class="c-str">"status"</span>: <span class="c-str">"success"</span>,
+        <span class="c-str">"readiness_score"</span>: result.readiness_percentage,
+        <span class="c-str">"identified_gaps"</span>: result.missing_skills,
+        <span class="c-str">"curated_recommendations"</span>: result.action_plan
+    }</code></pre>
+          </div>
+        </div>
+
+        <div class="case-footer-actions">
+          <button type="button" class="btn-editorial-primary" id="case-to-simulator-btn">
+            <i class="fa-solid fa-sliders"></i>
+            <span>Test Live Simulator</span>
+          </button>
+          <button type="button" class="btn-editorial-secondary modal-close-trigger">
+            <span>Close Case Study</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
